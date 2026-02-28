@@ -49,11 +49,11 @@ p {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 p {
-  font-size: 32px;
+  font-size: 28px;
 
   span {
     color: rgb(var(--v-theme-primary));
