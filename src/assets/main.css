@@ -1,0 +1,42 @@
+@import './base.css';
+
+@layer base, vuetify;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
