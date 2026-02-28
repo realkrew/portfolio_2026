@@ -73,7 +73,8 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh; /* 화면 꽉 차게 중앙 정렬 */
+  min-height: 100%; /* 화면 꽉 차게 중앙 정렬 */
+  padding-bottom: 10vh;
 }
 
 .header {
