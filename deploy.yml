@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ] # 메인 브랜치에 푸시될 때 실행
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm # pnpm 사용 중이시니 추가
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Set up Node
+        uses: actions/node-latest@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install and Build
+        run: |
+          pnpm install
+          pnpm build
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist # 빌드된 결과물 폴더
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
