@@ -18,6 +18,9 @@ import Main from "@/components/Main.vue";
             <p>그리고 저는 현재</p>
             <p><span>프로젝트 투입 중</span>이에요</p>
           </div>
+            <div class="align-center mt-4">
+              <p style="font-size: 2.4rem; opacity: .5;">4월 17일까지에요 👀</p>
+            </div>
         </div>
         <div class="rive-container"></div>
       </div>
@@ -49,11 +52,11 @@ p {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 p {
-  font-size: 28px;
+  font-size: 2.8rem;
 
   span {
     color: rgb(var(--v-theme-primary));
