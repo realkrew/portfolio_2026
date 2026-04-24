@@ -16,11 +16,11 @@ import Main from "@/components/Main.vue";
           </h1>
           <div class="d-flex flex-column flex-sm-row align-center justify-center ga-2 gp-sm-0 mt-4">
             <p>그리고 저는 현재</p>
-            <p><span>프로젝트 투입 중</span>이에요</p>
+            <p><span>휴식 중</span>이에요</p>
           </div>
-            <div class="align-center mt-4">
-              <p style="font-size: 2.4rem; opacity: .5;">4월 17일까지에요 👀</p>
-            </div>
+<!--            <div class="align-center mt-4">-->
+<!--              <p style="font-size: 2.4rem; opacity: .5;">4월 17일까지에요 👀</p>-->
+<!--            </div>-->
         </div>
         <div class="rive-container"></div>
       </div>
